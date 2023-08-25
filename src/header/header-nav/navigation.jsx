@@ -148,9 +148,7 @@ export default function Navigation(){
                                                             <div className="media">
                                                                 <div className="thumbnail object-cover">
                                                                     <a href="#">
-                                                                        <img src={apparel4}
-                                                                            alt="">
-                                                                                </img>
+                                                                        <img src={apparel4}alt="" />
                                                                     </a>
                                                                 </div>
                                                             </div>
@@ -376,9 +374,8 @@ export default function Navigation(){
                             <div className="search-box">
                                 <form action="" className="search">
                                     <span className="icon-large"><i className="ri-search-line"></i></span>
-                                    <input type="search" placeholder="Search for products">
+                                    <input type="search" placeholder="Search for products" />
                                     <button type="submit">Search</button>
-                                    </input>
                                 </form>
                             </div>
                         </div>

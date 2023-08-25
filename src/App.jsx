@@ -14,11 +14,11 @@ function App() {
   return (
     <div>
       <Navigation></Navigation>
-      <Products_banners></Products_banners>
-      <Products_featured></Products_featured>
-      <Products_trending></Products_trending>
       <Slider></Slider>
       <Brands></Brands>
+      <Products_trending></Products_trending>
+      <Products_featured></Products_featured>
+      <Products_banners></Products_banners>
       <Newsletter></Newsletter>
       <Socials></Socials>
       <Widgets></Widgets>

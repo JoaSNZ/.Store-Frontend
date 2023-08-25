@@ -20,9 +20,8 @@ export default function Products_banners() {
                                             <img src={banner1} alt=""></img>
                                         </div>
                                         <div className="text-content flexcol">
-                                            <h4>Brutal Sale!
-                                                <h3><span>Get the deal in here</span><br>Living Room Chairh</br></h3>
-                                            </h4>
+                                            <h4>Brutal Sale!</h4>
+                                            <h3><span>Get the deal in here</span><br />Living Room Chairh</h3>
                                             <a href="" className="primary-button">Shop Now</a>
                                         </div>
                                         <a href="" className="over-link"></a>
@@ -34,9 +33,8 @@ export default function Products_banners() {
                                             <img src={banner2} alt=""></img>
                                         </div>
                                         <div className="text-content flexcol">
-                                            <h4>Brutal Sale!
-                                                <h3><span>Discount everyday</span><br>Office Outfit</br></h3>
-                                            </h4>
+                                            <h4>Brutal Sale!</h4>
+                                            <h3><span>Discount everyday</span><br/>Office Outfit</h3>
                                             <a href="" className="primary-button">Shop Now</a>
                                         </div>
                                         <a href="" className="over-link"></a>
@@ -69,7 +67,7 @@ export default function Products_banners() {
                                 <div className="row">
                                     <div className="item">
                                         <div className="image">
-                                            <img src={procat2} alt=""></img>
+                                            <img src={procat2} alt="" />
                                         </div>
                                         <div className="content mini-links">
                                             <h4>Gadjets</h4>

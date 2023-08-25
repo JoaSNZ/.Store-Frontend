@@ -26,7 +26,7 @@ export default function Slider(){
                                         </div>
                                         <div className="text-content flexcol">
                                             <h4>Shoes Fashion</h4>
-                                            <h2><span>Come and Get it!</span><br><span>Brand New Shoes</span></br></h2>
+                                            <h2><span>Come and Get it!</span><br /><span>Brand New Shoes</span></h2>
                                             <a href="#" className="primary-button">Shop Now</a>
                                         </div>
                                     </div>
@@ -38,7 +38,7 @@ export default function Slider(){
                                         </div>
                                         <div className="text-content flexcol">
                                             <h4>Quick Fashion</h4>
-                                            <h2><span>Fit Your Wardobe</span><br><span>With Luxury Items</span></br></h2>
+                                            <h2><span>Fit Your Wardobe</span><br /><span>With Luxury Items</span></h2>
                                             <a href="#" className="primary-button">Shop Now</a>
                                         </div>
                                     </div>
@@ -50,7 +50,7 @@ export default function Slider(){
                                         </div>
                                         <div className="text-content flexcol">
                                             <h4>Quick Offer</h4>
-                                            <h2><span>Wooden Minimal Sofa</span><br><span>Extra 50% Off</span></br></h2>
+                                            <h2><span>Wooden Minimal Sofa</span><br /><span>Extra 50% Off</span></h2>
                                             <a href="#" className="primary-button">Shop Now</a>
                                         </div>
                                     </div>
@@ -62,8 +62,7 @@ export default function Slider(){
                                         </div>
                                         <div className="text-content flexcol">
                                             <h4>Best Deals</h4>
-                                            <h2><span>Home Workout Accesories</span><br><span>Push The Limits</span></br>
-                                            </h2>
+                                            <h2><span>Home Workout Accesories</span><br /><span>Push The Limits</span></h2>
                                             <a href="#" className="primary-button">Shop Now</a>
                                         </div>
                                     </div>

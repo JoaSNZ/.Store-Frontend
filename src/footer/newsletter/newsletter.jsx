@@ -1,7 +1,7 @@
 import '../newsletter/newsletter.css';
 export default function Newsletter() {
     return(
-    <div className="newsletter">
+        <div className="newsletter">
             <div className="container">
                 <div className="wrapper">
                     <div className="box">
@@ -11,7 +11,7 @@ export default function Newsletter() {
                         </div>
                         <form action="" className="search">
                             <span className="icon-large"><i className="ri-mail-line"></i></span>
-                            <input type="mail" placeholder="Your email address" required></input>
+                            <input type="email" name="email" id="" placeholder='Your email address' required />
                             <button type="submit">Sign Up</button>
                         </form>
                     </div>

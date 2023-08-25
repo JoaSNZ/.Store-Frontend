@@ -35,7 +35,7 @@ export default function Products_trending() {
                             <div className="media">
                                 <div className="image">
                                     <a href="#">
-                                        <img src={apparel4} alt=""></img>
+                                        <img src={apparel4} alt=""/>
                                     </a>
                                 </div>
                                 <div className="hoverable">
@@ -76,7 +76,7 @@ export default function Products_trending() {
                             <div className="media">
                                 <div className="thumbnail object-cover">
                                     <a href="#">
-                                        <img src={apparel3} alt=""></img>
+                                        <img src={apparel3} alt=""/>
                                     </a>
                                 </div>
                                 <div className="hoverable">
@@ -109,7 +109,7 @@ export default function Products_trending() {
                             <div className="media">
                                 <div className="thumbnail object-cover">
                                     <a href="#">
-                                        <img src={apparel1} alt=""></img>
+                                        <img src={apparel1} alt=""/>
                                     </a>
                                 </div>
                                 <div className="hoverable">
@@ -142,7 +142,7 @@ export default function Products_trending() {
                             <div className="media">
                                 <div className="thumbnail object-cover">
                                     <a href="#">
-                                        <img src={home1} alt=""></img>
+                                        <img src={home1} alt=""/>
                                     </a>
                                 </div>
                                 <div className="hoverable">
@@ -174,7 +174,7 @@ export default function Products_trending() {
                             <div className="media">
                                 <div className="thumbnail object-cover">
                                     <a href="#">
-                                        <img src={electronic3} alt=""></img>
+                                        <img src={electronic3} alt=""/>
                                     </a>
                                 </div>
                                 <div className="hoverable">
@@ -209,7 +209,7 @@ export default function Products_trending() {
                             <div className="media">
                                 <div className="thumbnail object-cover">
                                     <a href="#">
-                                        <img src={shoe1} alt=""></img>
+                                        <img src={shoe1} alt=""/>
                                     </a>
                                 </div>
                                 <div className="hoverable">
@@ -243,7 +243,7 @@ export default function Products_trending() {
                             <div className="media">
                                 <div className="thumbnail object-cover">
                                     <a href="#">
-                                        <img src={apparel2} alt=""> </img>
+                                        <img src={apparel2} alt=""/>
                                     </a>
                                 </div>
                                 <div className="hoverable">
@@ -277,7 +277,7 @@ export default function Products_trending() {
                             <div className="media">
                                 <div className="thumbnail object-cover">
                                     <a href="#">
-                                        <img src={home2} alt=""> </img>
+                                        <img src={home2} alt=""/>
                                     </a>
                                 </div>
                                 <div className="hoverable">
@@ -309,7 +309,7 @@ export default function Products_trending() {
                             <div className="media">
                                 <div className="thumbnail object-cover">
                                     <a href="#">
-                                        <img src={home3} alt=""> </img>
+                                        <img src={home3} alt=""/>
                                     </a>
                                 </div>
                                 <div className="hoverable">
