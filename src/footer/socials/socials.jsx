@@ -1,4 +1,5 @@
 import '../socials/socials.css';
+import {Link} from 'react-router-dom';
 export default function Socials(){
     return(
         <div className="footer-info">
@@ -6,15 +7,15 @@ export default function Socials(){
                 <div className="wrapper">
                     <div className="flexcol">
                         <div className="logo">
-                            <a href=""><span className="circle"></span>.Store</a>
+                            <Link to='/'><span className="circle"></span>.Store</Link>
                         </div>
                         <div className="socials">
                             <ul className="flexitem">
-                                <li><a href=""><i className="ri-twitter-line"></i></a></li>
-                                <li><a href=""><i className="ri-facebook-line"></i></a></li>
-                                <li><a href=""><i className="ri-instagram-line"></i></a></li>
-                                <li><a href=""><i className="ri-linkedin-line"></i></a></li>
-                                <li><a href=""><i className="ri-youtube-line"></i></a></li>
+                                <li><Link to='/'><i className="ri-twitter-line"></i></Link></li>
+                                <li><Link to='/'><i className="ri-facebook-line"></i></Link></li>
+                                <li><Link to='/'><i className="ri-instagram-line"></i></Link></li>
+                                <li><Link to='/'><i className="ri-linkedin-line"></i></Link></li>
+                                <li><Link to='/'><i className="ri-youtube-line"></i></Link></li>
                             </ul>
                         </div>
                     </div>

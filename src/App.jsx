@@ -10,18 +10,36 @@ import Newsletter from './footer/newsletter/newsletter';
 import Socials from './footer/socials/socials';
 import Widgets from './footer/widgets/widgets';
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 function App() {
   return (
     <div>
-      <Navigation></Navigation>
-      <Slider></Slider>
-      <Brands></Brands>
-      <Products_trending></Products_trending>
-      <Products_featured></Products_featured>
-      <Products_banners></Products_banners>
-      <Newsletter></Newsletter>
-      <Socials></Socials>
-      <Widgets></Widgets>
+
+      <Router>
+      
+        <Routes>
+
+          <Route
+            path='/'
+            element={
+              <>
+                <Navigation></Navigation>
+                <Slider></Slider>
+                <Brands></Brands>
+                <Products_trending></Products_trending>
+                <Products_featured></Products_featured>
+                <Products_banners></Products_banners>
+                <Newsletter></Newsletter>
+                <Widgets></Widgets>
+                <Socials></Socials>
+              </>
+            }
+          />
+
+        </Routes>
+
+      </Router>
 
     </div>
   );

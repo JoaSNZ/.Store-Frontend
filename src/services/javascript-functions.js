@@ -1,5 +1,5 @@
 //comentar todas las funciones de js y terminar de migrar la pagina
-//import {Swiper} from 'https://unpkg.com/swiper@8/swiper-bundle.min.js';
+
 
 //function copyMenu(){
     //var dptCategory = document.querySelector('.dpt-cat');

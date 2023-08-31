@@ -8,6 +8,7 @@ import home2 from '../../multimedia/products/home4.jpg';
 import home3 from '../../multimedia/products/home3.jpg';
 import electronic3 from '../../multimedia/products/electronic3.jpg';
 import shoe1 from '../../multimedia/products/shoe1.jpg';
+import {Link} from 'react-router-dom';
 export default function Products_trending() {
     
 
@@ -34,16 +35,16 @@ export default function Products_trending() {
                             </div>
                             <div className="media">
                                 <div className="image">
-                                    <a href="#">
+                                    <Link to= '/'>
                                         <img src={apparel4} alt=""/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="hoverable">
                                     <ul>
-                                        <li className="active"><a href="#"><i className="ri-heart-line"></i></a>
+                                        <li className="active"><Link to= '/'><i className="ri-heart-line"></i></Link>
                                         </li>
-                                        <li><a href="#"><i className="ri-eye-line"></i></a></li>
-                                        <li><a href="#"><i className="ri-shuffle-line"></i></a></li>
+                                        <li><Link to= '/'><i className="ri-eye-line"></i></Link></li>
+                                        <li><Link to= '/'><i className="ri-shuffle-line"></i></Link></li>
                                     </ul>
                                 </div>
                                 <div className="discount circle flexcenter"><span>31%</span></div>
@@ -53,8 +54,8 @@ export default function Products_trending() {
                                     <div className="stars"></div>
                                     <span className="mini-text">(2,548)</span>
                                 </div>
-                                <h3 className="main-links"><a href="#">Happy Sailed Womens Summer Boho
-                                        Floral</a></h3>
+                                <h3 className="main-links"><Link to= '/'>Happy Sailed Womens Summer Boho
+                                        Floral</Link></h3>
                                 <div className="price">
                                     <span className="current">$129.99</span>
                                     <span className="normal mini-text">$189.99</span>
@@ -75,22 +76,22 @@ export default function Products_trending() {
                         <div className="item">
                             <div className="media">
                                 <div className="thumbnail object-cover">
-                                    <a href="#">
+                                    <Link to= '/'>
                                         <img src={apparel3} alt=""/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="hoverable">
                                     <ul>
-                                        <li className="active"><a href="#"><i className="ri-heart-line"></i></a>
+                                        <li className="active"><Link to= '/'><i className="ri-heart-line"></i></Link>
                                         </li>
-                                        <li><a href="#"><i className="ri-eye-line"></i></a></li>
-                                        <li><a href="#"><i className="ri-shuffle-line"></i></a></li>
+                                        <li><Link to= '/'><i className="ri-eye-line"></i></Link></li>
+                                        <li><Link to= '/'><i className="ri-shuffle-line"></i></Link></li>
                                     </ul>
                                 </div>
                                 <div className="discount circle flexcenter"><span>32%</span></div>
                             </div>
                             <div className="content">
-                                <h3 className="main-links"><a href="#">Black Women's Coat Dress</a></h3>
+                                <h3 className="main-links"><Link to= '/'>Black Women's Coat Dress</Link></h3>
                                 <div className="rating">
                                     <div className="stars"></div>
                                     <span className="mini-text">(2,548)</span>
@@ -108,22 +109,22 @@ export default function Products_trending() {
                         <div className="item">
                             <div className="media">
                                 <div className="thumbnail object-cover">
-                                    <a href="#">
+                                    <Link to= '/'>
                                         <img src={apparel1} alt=""/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="hoverable">
                                     <ul>
-                                        <li className="active"><a href="#"><i className="ri-heart-line"></i></a>
+                                        <li className="active"><Link to= '/'><i className="ri-heart-line"></i></Link>
                                         </li>
-                                        <li><a href="#"><i className="ri-eye-line"></i></a></li>
-                                        <li><a href="#"><i className="ri-shuffle-line"></i></a></li>
+                                        <li><Link to= '/'><i className="ri-eye-line"></i></Link></li>
+                                        <li><Link to= '/'><i className="ri-shuffle-line"></i></Link></li>
                                     </ul>
                                 </div>
                                 <div className="discount circle flexcenter"><span>25%</span></div>
                             </div>
                             <div className="content">
-                                <h3 className="main-links"><a href="#">Under Armour Men's Tech</a></h3>
+                                <h3 className="main-links"><Link to= '/'>Under Armour Men's Tech</Link></h3>
                                 <div className="rating">
                                     <div className="stars"></div>
                                     <span className="mini-text">(1,955)</span>
@@ -141,22 +142,22 @@ export default function Products_trending() {
                         <div className="item">
                             <div className="media">
                                 <div className="thumbnail object-cover">
-                                    <a href="#">
+                                    <Link to= '/'>
                                         <img src={home1} alt=""/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="hoverable">
                                     <ul>
-                                        <li className="active"><a href="#"><i className="ri-heart-line"></i></a>
+                                        <li className="active"><Link to= '/'><i className="ri-heart-line"></i></Link>
                                         </li>
-                                        <li><a href="#"><i className="ri-eye-line"></i></a></li>
-                                        <li><a href="#"><i className="ri-shuffle-line"></i></a></li>
+                                        <li><Link to= '/'><i className="ri-eye-line"></i></Link></li>
+                                        <li><Link to= '/'><i className="ri-shuffle-line"></i></Link></li>
                                     </ul>
                                 </div>
                                 <div className="discount circle flexcenter"><span>37%</span></div>
                             </div>
                             <div className="content">
-                                <h3 className="main-links"><a href="#">Vonada Velvet Sofa Couch</a></h3>
+                                <h3 className="main-links"><Link to= '/'>Vonada Velvet Sofa Couch</Link></h3>
                                 <div className="rating">
                                     <div className="stars"></div>
                                     <span className="mini-text">(1,559)</span>
@@ -173,22 +174,22 @@ export default function Products_trending() {
                         <div className="item">
                             <div className="media">
                                 <div className="thumbnail object-cover">
-                                    <a href="#">
+                                    <Link to= '/'>
                                         <img src={electronic3} alt=""/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="hoverable">
                                     <ul>
-                                        <li className="active"><a href="#"><i className="ri-heart-line"></i></a>
+                                        <li className="active"><Link to= '/'><i className="ri-heart-line"></i></Link>
                                         </li>
-                                        <li><a href="#"><i className="ri-eye-line"></i></a></li>
-                                        <li><a href="#"><i className="ri-shuffle-line"></i></a></li>
+                                        <li><Link to= '/'><i className="ri-eye-line"></i></Link></li>
+                                        <li><Link to= '/'><i className="ri-shuffle-line"></i></Link></li>
                                     </ul>
                                 </div>
                                 <div className="discount circle flexcenter"><span>20%</span></div>
                             </div>
                             <div className="content">
-                                <h3 className="main-links"><a href="#">Wireless Headphones</a></h3>
+                                <h3 className="main-links"><Link to= '/'>Wireless Headphones</Link></h3>
                                 <div className="rating">
                                     <div className="stars"></div>
                                     <span className="mini-text">(1,411)</span>
@@ -208,23 +209,23 @@ export default function Products_trending() {
                         <div className="item">
                             <div className="media">
                                 <div className="thumbnail object-cover">
-                                    <a href="#">
+                                    <Link to= '/'>
                                         <img src={shoe1} alt=""/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="hoverable">
                                     <ul>
-                                        <li className="active"><a href="#"><i className="ri-heart-line"></i></a>
+                                        <li className="active"><Link to= '/'><i className="ri-heart-line"></i></Link>
                                         </li>
-                                        <li><a href="#"><i className="ri-eye-line"></i></a></li>
-                                        <li><a href="#"><i className="ri-shuffle-line"></i></a></li>
+                                        <li><Link to= '/'><i className="ri-eye-line"></i></Link></li>
+                                        <li><Link to= '/'><i className="ri-shuffle-line"></i></Link></li>
                                     </ul>
                                 </div>
                                 <div className="discount circle flexcenter"><span>32%</span></div>
                             </div>
                             <div className="content">
-                                <h3 className="main-links"><a href="#">Men Slip On Shoes Casual with Arch
-                                        Support Insoles</a></h3>
+                                <h3 className="main-links"><Link to= '/'>Men Slip On Shoes Casual with Arch
+                                        Support Insoles</Link></h3>
                                 <div className="rating">
                                     <div className="stars"></div>
                                     <span className="mini-text">(2,548)</span>
@@ -242,23 +243,23 @@ export default function Products_trending() {
                         <div className="item">
                             <div className="media">
                                 <div className="thumbnail object-cover">
-                                    <a href="#">
+                                    <Link to= '/'>
                                         <img src={apparel2} alt=""/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="hoverable">
                                     <ul>
-                                        <li className="active"><a href="#"><i className="ri-heart-line"></i></a>
+                                        <li className="active"><Link to= '/'><i className="ri-heart-line"></i></Link>
                                         </li>
-                                        <li><a href="#"><i className="ri-eye-line"></i></a></li>
-                                        <li><a href="#"><i className="ri-shuffle-line"></i></a></li>
+                                        <li><Link to= '/'><i className="ri-eye-line"></i></Link></li>
+                                        <li><Link to= '/'><i className="ri-shuffle-line"></i></Link></li>
                                     </ul>
                                 </div>
                                 <div className="discount circle flexcenter"><span>17%</span></div>
                             </div>
                             <div className="content">
-                                <h3 className="main-links"><a href="#">Women's Lightweight Knit Hoodie Sweater
-                                        Pullover</a></h3>
+                                <h3 className="main-links"><Link to= '/'>Women's Lightweight Knit Hoodie Sweater
+                                        Pullover</Link></h3>
                                 <div className="rating">
                                     <div className="stars"></div>
                                     <span className="mini-text">(994)</span>
@@ -276,22 +277,22 @@ export default function Products_trending() {
                         <div className="item">
                             <div className="media">
                                 <div className="thumbnail object-cover">
-                                    <a href="#">
+                                    <Link to= '/'>
                                         <img src={home2} alt=""/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="hoverable">
                                     <ul>
-                                        <li className="active"><a href="#"><i className="ri-heart-line"></i></a>
+                                        <li className="active"><Link to= '/'><i className="ri-heart-line"></i></Link>
                                         </li>
-                                        <li><a href="#"><i className="ri-eye-line"></i></a></li>
-                                        <li><a href="#"><i className="ri-shuffle-line"></i></a></li>
+                                        <li><Link to= '/'><i className="ri-eye-line"></i></Link></li>
+                                        <li><Link to= '/'><i className="ri-shuffle-line"></i></Link></li>
                                     </ul>
                                 </div>
                                 <div className="discount circle flexcenter"><span>44%</span></div>
                             </div>
                             <div className="content">
-                                <h3 className="main-links"><a href="#">Dimmable Ceiling Light Modern</a></h3>
+                                <h3 className="main-links"><Link to= '/'>Dimmable Ceiling Light Modern</Link></h3>
                                 <div className="rating">
                                     <div className="stars"></div>
                                     <span className="mini-text">(543)</span>
@@ -308,22 +309,22 @@ export default function Products_trending() {
                         <div className="item">
                             <div className="media">
                                 <div className="thumbnail object-cover">
-                                    <a href="#">
+                                    <Link to= '/'>
                                         <img src={home3} alt=""/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="hoverable">
                                     <ul>
-                                        <li className="active"><a href="#"><i className="ri-heart-line"></i></a>
+                                        <li className="active"><Link to= '/'><i className="ri-heart-line"></i></Link>
                                         </li>
-                                        <li><a href="#"><i className="ri-eye-line"></i></a></li>
-                                        <li><a href="#"><i className="ri-shuffle-line"></i></a></li>
+                                        <li><Link to= '/'><i className="ri-eye-line"></i></Link></li>
+                                        <li><Link to= '/'><i className="ri-shuffle-line"></i></Link></li>
                                     </ul>
                                 </div>
                                 <div className="discount circle flexcenter"><span>18%</span></div>
                             </div>
                             <div className="content">
-                                <h3 className="main-links"><a href="#">Modern Storage Cabinet</a></h3>
+                                <h3 className="main-links"><Link to= '/'>Modern Storage Cabinet</Link></h3>
                                 <div className="rating">
                                     <div className="stars"></div>
                                     <span className="mini-text">(335)</span>
