@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navigation from './header/header-nav/navigation';
 import Products_banners from './main/products/products-banners';

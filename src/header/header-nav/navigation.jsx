@@ -1,12 +1,13 @@
 import '../header-nav/navigation.css';
 import '../../services/javascript-functions';
 import apparel4 from '../../multimedia/products/apparel4.jpg';
+import home2 from '../../multimedia/products/home2.jpg';
+import home3 from '../../multimedia/products/home3.jpg';
+import home4 from '../../multimedia/products/home4.jpg';
+import home5 from '../../multimedia/products/home5.jpg';
 import {Link} from 'react-router-dom'
 
 export default function Navigation(){
-
-
-
 
     return (
     <div id="page" className="site">
@@ -179,15 +180,91 @@ export default function Navigation(){
                                         <div className="icon-large"><i className="ri-heart-line"></i></div>
                                         <div className="fly-item"><span className="item-number">0</span></div>
                                     </Link></li>
-                                <li><Link to="/" className="iscart"></Link></li>
+                                <li className="iscart"><Link to="/">
                                 <div className="icon-large">
                                     <i className="ri-shopping-cart-line"></i>
-                                    <div className="fly-item"><span className="item-number">0</span></div>
+                                    <div className="fly-item"><span className="item-number">5</span></div>
                                 </div>
                                 <div className="icon-text">
                                     <div className="mini-text">Total</div>
-                                    <div className="cart-total">$0.00</div>
+                                    <div className="cart-total">$1,622.95</div>
                                 </div>
+                                </Link>
+                                </li>
+                                <div className="mini-cart">
+                                    <div className="content">
+                                        <div className="cart-head">
+                                            5 items in cart
+                                        </div>
+                                        <div className="cart-body">
+                                            <ul className="products mini">
+                                                <li className="item">
+                                                    <div className="thumbnail object-cover">
+                                                        <Link to="/"><img src={home2} alt=""/></Link>
+                                                    </div>
+                                                    <div className="item-content">
+                                                        <p><Link>Dimmable Celing Light Modern</Link></p>
+                                                        <span className="price">
+                                                            <span>$279.99</span>
+                                                            <span className="fly-item"><span>2x</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <Link to= "/" className="item-remove"><i className="ri-close-line"></i></Link>
+                                                </li>
+                                                <li className="item">
+                                                    <div className="thumbnail object-cover">
+                                                        <Link to="/"><img src={home3} alt=""/></Link>
+                                                    </div>
+                                                    <div className="item-content">
+                                                        <p><Link>Dimmable Celing Light Modern</Link></p>
+                                                        <span className="price">
+                                                            <span>$279.99</span>
+                                                            <span className="fly-item"><span>1x</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <Link to= "/" className="item-remove"><i className="ri-close-line"></i></Link>
+                                                </li>
+                                                <li className="item">
+                                                    <div className="thumbnail object-cover">
+                                                        <Link to="/"><img src={home4} alt=""/></Link>
+                                                    </div>
+                                                    <div className="item-content">
+                                                        <p><Link>Dimmable Celing Light Modern</Link></p>
+                                                        <span className="price">
+                                                            <span>$279.99</span>
+                                                            <span className="fly-item"><span>1x</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <Link to= "/" className="item-remove"><i className="ri-close-line"></i></Link>
+                                                </li>
+                                                <li className="item">
+                                                    <div className="thumbnail object-cover">
+                                                        <Link to="/"><img src={home5} alt=""/></Link>
+                                                    </div>
+                                                    <div className="item-content">
+                                                        <p><Link>Dimmable Celing Light Modern</Link></p>
+                                                        <span className="price">
+                                                            <span>$279.99</span>
+                                                            <span className="fly-item"><span>1x</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <Link to= "/" className="item-remove"><i className="ri-close-line"></i></Link>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="cart-footer">
+                                            <div className="subtotal">
+                                                <p>Subtotal</p>
+                                                <p><strong>$1,622.95</strong></p>
+                                                <div className="actions">
+                                                    <Link to= "/" className="primary-button">Checkout</Link>
+                                                    <Link to= "/" className="secondary-button">View Cart</Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </ul>
                         </div>
                     </div>
@@ -385,6 +462,6 @@ export default function Navigation(){
             </div>
            
         </header>
-        /</div>
+        </div>
     )
 }
