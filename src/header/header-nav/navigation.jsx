@@ -180,7 +180,7 @@ export default function Navigation(){
                                         <div className="icon-large"><i className="ri-heart-line"></i></div>
                                         <div className="fly-item"><span className="item-number">0</span></div>
                                     </Link></li>
-                                <li className="iscart"><Link to="/">
+                                <li className="cart"><Link to="/">
                                 <div className="icon-large">
                                     <i className="ri-shopping-cart-line"></i>
                                     <div className="fly-item"><span className="item-number">5</span></div>
@@ -190,7 +190,6 @@ export default function Navigation(){
                                     <div className="cart-total">$1,622.95</div>
                                 </div>
                                 </Link>
-                                </li>
                                 <div className="mini-cart">
                                     <div className="content">
                                         <div className="cart-head">
@@ -258,13 +257,13 @@ export default function Navigation(){
                                                 <p><strong>$1,622.95</strong></p>
                                                 <div className="actions">
                                                     <Link to= "/" className="primary-button">Checkout</Link>
-                                                    <Link to= "/" className="secondary-button">View Cart</Link>
+                                                    <Link to= "/Cart" className="secondary-button">View Cart</Link>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
+                               </li> 
                             </ul>
                         </div>
                     </div>
