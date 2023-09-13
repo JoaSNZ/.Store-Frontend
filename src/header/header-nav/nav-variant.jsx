@@ -5,10 +5,9 @@ import home2 from '../../multimedia/products/home2.jpg';
 import home3 from '../../multimedia/products/home3.jpg';
 import home4 from '../../multimedia/products/home4.jpg';
 import home5 from '../../multimedia/products/home5.jpg';
-import {Link} from 'react-router-dom';
-import {data} from '../../data'
+import {Link} from 'react-router-dom'
 
-export default function Navigation(){
+export default function Nav_variant(){
 
     //const dptButton = document.querySelector('.dpt-cat .dpt-trigger'),
         //dptClass = document.querySelector('.site');
@@ -196,7 +195,7 @@ export default function Navigation(){
                                 </div>
                                 <div className="icon-text">
                                     <div className="mini-text">Total</div>
-                                    <div className="cart-total">$0</div>
+                                    <div className="cart-total">$1,622.95</div>
                                 </div>
                                 </Link>
                                 <div className="mini-cart">
@@ -279,196 +278,8 @@ export default function Navigation(){
                 </div>
             </div>
 
-            <div className="header-main mobile-hide">
-                <div className="container">
-                    <div className="wrapper flexitem">
-                        <div className="left">
-                            <div className="dpt-cat">
-                                <div className="dpt-head">
-                                    <div className="main-text">All Departments</div>
-                                    <div className="mini-text mobile-hide">Total 1059 Products</div>
-                                    <Link to="/" className="dpt-trigger mobile-hide">
-                                        <i className="ri-menu-3-line ri-xl"></i>
-                                        <i className="ri-close-line ri-xl"></i>
-                                    </Link>
-                                </div>
-                                <div className="dpt-menu">
-                                    <ul className="second-links">
-                                        <li className="has-child beauty">
-                                            <Link to="/">
-                                                <div className="icon-large"><i className="ri-bear-smile-line"></i></div>
-                                                Beauty
-                                                <div className="icon-small"><i className="ri-arrow-right-s-line"></i></div>
-                                            </Link>
-                                            <ul>
-                                                <li><Link to="/">Makeup</Link></li>
-                                                <li><Link to="/">Skin Care</Link></li>
-                                                <li><Link to="/">Hair Care</Link></li>
-                                                <li><Link to="/">Fragance</Link></li>
-                                                <li><Link to="/">Foot & Hand Care</Link></li>
-                                                <li><Link to="/">Tools & Accesories</Link></li>
-                                                <li><Link to="/">Shave & Hair Removal</Link></li>
-                                                <li><Link to="/">Personal Care</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li className="has-child electronic">
-                                            <Link to="/">
-                                                <div className="icon-large"><i className="ri-bluetooth-connect-line"></i></div>
-                                                Electronics
-                                                <div className="icon-small"><i className="ri-arrow-right-s-line"></i></div>
-                                            </Link>
-                                            <ul>
-                                                <li><Link to="/">Camera</Link></li>
-                                                <li><Link to="/">Cellphones</Link></li>
-                                                <li><Link to="/">Computers</Link></li>
-                                                <li><Link to="/">GPS & Navigation</Link></li>
-                                                <li><Link to="/">Headphones</Link></li>
-                                                <li><Link to="/">Home Audio</Link></li>
-                                                <li><Link to="/">Televison</Link></li>
-                                                <li><Link to="/">Video Projectors</Link></li>
-                                                <li><Link to="/">Wearable Technology</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li className="has-child fashion">
-                                            <Link to="/">
-                                                <div className="icon-large"><i className="ri-t-shirt-air-line"></i></div>
-                                                Women's Fashion
-                                                <div className="icon-small"><i className="ri-arrow-right-s-line"></i></div>
-                                            </Link>
-                                            <ul>
-                                                <li><Link to="/">Clothing</Link></li>
-                                                <li><Link to="/">Shoes</Link></li>
-                                                <li><Link to="/">Jewelry</Link></li>
-                                                <li><Link to="/">Watches</Link></li>
-                                                <li><Link to="/">handbags</Link></li>
-                                                <li><Link to="/">Accesories</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <Link to="/">
-                                                <div className="icon-large"><i className="ri-shirt-line"></i></div>
-                                                Men's Fashion
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/">
-                                                <div className="icon-large"><i className="ri-user-5-line"></i></div>
-                                                Girl's Fashion
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/">
-                                                <div className="icon-large"><i className="ri-user-6-line"></i></div>
-                                                Boy's Fashion
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/">
-                                                <div className="icon-large"><i className="ri-heart-pulse-line"></i></div>
-                                                Health & Household
-                                            </Link>
-                                        </li>
-                                        <li className="has-child homekit">
-                                            <Link to="/">
-                                                <div className="icon-large"><i className="ri-home-8-line"></i></div>
-                                                Home & Kitchen
-                                                <div className="icon-small"><i className="ri-arrow-right-s-line"></i></div>
-                                            </Link>
-                                            <div className="mega">
-                                                <div className="flexcol">
-                                                    <div className="row">
-                                                        <h4><Link to="/">Kitchen & Dining</Link></h4>
-                                                        <ul>
-                                                            <li><Link to="/">Kitchen</Link></li>
-                                                            <li><Link to="/">Dining Room</Link></li>
-                                                            <li><Link to="/">Pantry</Link></li>
-                                                            <li><Link to="/">Great Room</Link></li>
-                                                            <li><Link to="/">Breakfast Nook</Link></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div className="row">
-                                                        <h4><Link to="/">Living</Link></h4>
-                                                        <ul>
-                                                            <li><Link to="/">Living Room</Link></li>
-                                                            <li><Link to="/">Family Room</Link></li>
-                                                            <li><Link to="/">Sunroom</Link></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div className="flexcol">
-                                                    <div className="row">
-                                                        <h4><Link to="/">Bed & Bath</Link></h4>
-                                                        <ul>
-                                                            <li><Link to="/">Bathroom</Link></li>
-                                                            <li><Link to="/">Powder Room</Link></li>
-                                                            <li><Link to="/">Bedroom</Link></li>
-                                                            <li><Link to="/">Storage & Closet</Link></li>
-                                                            <li><Link to="/">Baby & Kids</Link></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div className="row">
-                                                        <h4><Link to="/">Utility</Link></h4>
-                                                        <ul>
-                                                            <li><Link to="/">Laundry</Link></li>
-                                                            <li><Link to="/">Garage</Link></li>
-                                                            <li><Link to="/">Mudroom</Link></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div className="flexcol">
-                                                    <div className="row">
-                                                        <h4><Link to="/">Outdoor</Link></h4>
-                                                        <ul>
-                                                            <li><Link to="/">Landscape</Link></li>
-                                                            <li><Link to="/">Patio</Link></li>
-                                                            <li><Link to="/">Deck</Link></li>
-                                                            <li><Link to="/">Pool</Link></li>
-                                                            <li><Link to="/">Backyard</Link></li>
-                                                            <li><Link to="/">Porch</Link></li>
-                                                            <li><Link to="/">Exterior</Link></li>
-                                                            <li><Link to="/">Outdoor Kitchen</Link></li>
-                                                            <li><Link to="/">Front Yard</Link></li>
-                                                            <li><Link to="/">Driveway</Link></li>
-                                                            <li><Link to="/">Poolhouse</Link></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <Link to="/">
-                                                <div className="icon-large"><i className="ri-baidu-line"></i></div>
-                                                Pet Supplies
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/">
-                                                <div className="icon-large"><i className="ri-basketball-line"></i></div>
-                                                Sports
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/">
-                                                <div className="icon-large"><i className="ri-shield-star-line"></i></div>
-                                                Best Seller
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="right">
-                            <div className="search-box">
-                                <form action="" className="search">
-                                    <span className="icon-large"><i className="ri-search-line"></i></span>
-                                    <input type="search" placeholder="Search for products" />
-                                    <button type="submit">Search</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
+            
            
         </header>
         </div>

@@ -417,6 +417,12 @@ h4{
         justify-content: space-between;
         align-items: center;
     }
+    #page:not(.page-home) .dpt-menu{
+        display: none;
+    }
+    #page.showdpt .dpt-menu{
+        display: block;
+    }
 }
 
 :where(.off-canvas, header) li > a{
@@ -868,3 +874,14 @@ form.search button:hover{
     text-align: center;
     margin-bottom: 1em;
 }
+
+.page-home .dpt-cat .dpt-trigger, 
+.dpt-trigger .ri-close-line,
+.showdpt .dpt-trigger .ri-menu-3-line{
+    display: none;
+}
+
+.showdpt .dpt-trigger .ri-close-line{
+    display: block;
+}
+

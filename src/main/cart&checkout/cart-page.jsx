@@ -11,16 +11,17 @@ export default function Cart_page(){
     <div className="single-cart">
         <div className="container">
             <div className="wrapper">
-                <div className="breadcrumb">
-                    <ul className="flex-item">
-                        <li><Link to= '/Cart'></Link></li>
-                        <li>Cart</li>
-                    </ul>
                 </div>
                 <div className="page-title">
                     <h1>Shopping Cart</h1>
                 </div>
+                <div className="products one cart">
+                    <div className="flexwrap">
+                        <form action="" className="form-cart"></form>
+                        <div className="cart-summary styled"></div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    
 }

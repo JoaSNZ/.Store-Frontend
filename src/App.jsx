@@ -1,5 +1,6 @@
 import './App.css';
 import Navigation from './header/header-nav/navigation';
+import Nav_variant from './header/header-nav/nav-variant';
 import Products_banners from './main/products/products-banners';
 import Products_featured from './main/products/products-featured';
 import Products_trending from './main/products/products-trending';
@@ -40,7 +41,7 @@ function App() {
             path= '/Cart'
             element={
               <>
-              <Navigation></Navigation>
+              <Nav_variant></Nav_variant>
               <Cart_page></Cart_page>
               <Newsletter></Newsletter>
               <Widgets></Widgets>
