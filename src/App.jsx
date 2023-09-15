@@ -1,9 +1,8 @@
 import './App.css';
 import Navigation from './header/header-nav/navigation';
-import Nav_variant from './header/header-nav/nav-variant';
 import Products_banners from './main/products/products-banners';
 import Products_featured from './main/products/products-featured';
-import Products_trending from './main/products/products-trending';
+import { Products_trending } from './main/products/products-trending';
 import Slider from './main/slider/slider';
 import Brands from './main/brands/brands';
 import Newsletter from './footer/newsletter/newsletter';
@@ -13,8 +12,12 @@ import Login_Register from './header/login/login';
 import Cart_page from './main/cart&checkout/cart-page';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 
 function App() {
+  const [allProducts, setAllProducts ] = useState ([ ]);
+  const [totalPrice, setTotalPrice ] = useState(0);
+  const [countProducts, setCountProduct ] = useState (0);
   return (
     <div>
 
@@ -26,10 +29,25 @@ function App() {
             path='/'
             element={
               <>
-                <Navigation></Navigation>
+                <Navigation 
+                allProducts={ allProducts }
+                setAllProducts={ setAllProducts }
+                totalPrice={ totalPrice }
+                setTotalPrice={ setTotalPrice }
+                countProducts={ countProducts }
+                setCountProduct= { setCountProduct }>
+
+                </Navigation>
                 <Slider></Slider>
                 <Brands></Brands>
-                <Products_trending></Products_trending>
+                <Products_trending 
+                allProducts= { allProducts } 
+                setAllProducts={ setAllProducts }
+                totalPrice= { setTotalPrice }
+                setTotalPrice={ setTotalPrice }
+                countProducts={ countProducts }
+                setCountProduct= { setCountProduct }>
+                </Products_trending>
                 <Products_featured></Products_featured>
                 <Products_banners></Products_banners>
                 <Newsletter></Newsletter>

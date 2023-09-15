@@ -17,7 +17,6 @@ export default function Products_featured() {
 
     return (
         <div className="features">
-            {data.map(product => (
                 <div className="container">
                     <div className="wrapper">
                         <div className="column">
@@ -271,6 +270,6 @@ export default function Products_featured() {
                         </div>
                     </div>
                 </div>
-            ))}
+            
         </div>
 )}

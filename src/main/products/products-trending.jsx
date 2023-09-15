@@ -10,13 +10,16 @@ import electronic3 from '../../multimedia/products/electronic3.jpg';
 import shoe1 from '../../multimedia/products/shoe1.jpg';
 import { Link } from 'react-router-dom';
 import { data } from '../../data.js'
-export default function Products_trending() {
+import { useState } from 'react';
+export const Products_trending = ({ allProducts, setAllProducts }) => {
 
 
+    const onAddProduct = () => {
+        console.log("add")
+    }
 
     return (
         <div className="trending">
-            {data.map(product => (
                 <div className="container">
                     <div className="wrapper">
                         <div className="sectop flexitem">
@@ -25,6 +28,7 @@ export default function Products_trending() {
                         <div className="column">
                             <div className="flexwrap">
                                 <div className="row products big">
+                                {data.map(product => (
                                     <div className="item" key={product.id}>
                                         <div className="offer">
                                             <p>Offer ends at</p>
@@ -37,13 +41,11 @@ export default function Products_trending() {
                                         </div>
                                         <div className="media">
                                             <div className="image">
-                                                <Link to='/'>
-                                                    <img src={apparel4} alt="" />
-                                                </Link>
+                                                    <img src={apparel4} />
                                             </div>
                                             <div className="hoverable">
                                                 <ul>
-                                                    <li className="active"><Link to='/'><i className="ri-heart-line"></i></Link>
+                                                    <li className="active"><button onClick={() => onAddProduct()}><i className="ri-heart-line"></i></button>
                                                     </li>
                                                     <li><Link to='/'><i className="ri-eye-line"></i></Link></li>
                                                     <li><Link to='/'><i className="ri-shuffle-line"></i></Link></li>
@@ -56,10 +58,9 @@ export default function Products_trending() {
                                                 <div className="stars"></div>
                                                 <span className="mini-text">(2,548)</span>
                                             </div>
-                                            <h3 className="main-links"><Link to='/'>Happy Sailed Womens Summer Boho
-                                        Floral</Link></h3>
+                                            <h3 className="main-links"><Link to='/'>{product.nameProduct}</Link></h3>
                                             <div className="price">
-                                                <span className="current">$129.99</span>
+                                                <span className="current">{product.price}</span>
                                                 <span className="normal mini-text">$189.99</span>
                                             </div>
                                             <div className="stock mini-text">
@@ -73,6 +74,7 @@ export default function Products_trending() {
                                             </div>
                                         </div>
                                     </div>
+                                ))}
                                 </div>
                                 <div className="row products mini">
                                     <div className="item" >
@@ -345,7 +347,8 @@ export default function Products_trending() {
                         </div>
                     </div>
                 </div>
-            ))}
+            
         </div>
+    
     )
-}
+    }
