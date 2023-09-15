@@ -75,7 +75,7 @@ export default function Products_trending() {
                                     </div>
                                 </div>
                                 <div className="row products mini">
-                                    <div className="item" key={product.id}>
+                                    <div className="item" >
                                         <div className="media">
                                             <div className="thumbnail object-cover">
                                                 <Link to='/'>
@@ -108,7 +108,7 @@ export default function Products_trending() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="item" key={product.id}>
+                                    <div className="item" >
                                         <div className="media">
                                             <div className="thumbnail object-cover">
                                                 <Link to='/'>
@@ -141,7 +141,7 @@ export default function Products_trending() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="item" key={product.id}>
+                                    <div className="item" >
                                         <div className="media">
                                             <div className="thumbnail object-cover">
                                                 <Link to='/'>
@@ -173,7 +173,7 @@ export default function Products_trending() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="item" key={product.id}>
+                                    <div className="item" >
                                         <div className="media">
                                             <div className="thumbnail object-cover">
                                                 <Link to='/'>
@@ -208,7 +208,7 @@ export default function Products_trending() {
                                     </div>
                                 </div>
                                 <div className="row products mini">
-                                    <div className="item" key={product.id}>
+                                    <div className="item" >
                                         <div className="media">
                                             <div className="thumbnail object-cover">
                                                 <Link to='/'>
@@ -242,7 +242,7 @@ export default function Products_trending() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="item" key={product.id}>
+                                    <div className="item" >
                                         <div className="media">
                                             <div className="thumbnail object-cover">
                                                 <Link to='/'>
@@ -276,7 +276,7 @@ export default function Products_trending() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="item" key={product.id}>
+                                    <div className="item" >
                                         <div className="media">
                                             <div className="thumbnail object-cover">
                                                 <Link to='/'>
@@ -308,7 +308,7 @@ export default function Products_trending() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="item" key={product.id}>
+                                    <div className="item" >
                                         <div className="media">
                                             <div className="thumbnail object-cover">
                                                 <Link to='/'>

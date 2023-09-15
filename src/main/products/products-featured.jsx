@@ -28,7 +28,7 @@ export default function Products_featured() {
                                 </div>
                             </div>
                             <div className="products main flexwrap">
-                                <div className="item" key={product.id}>
+                                <div className="item" >
                                     <div className="media">
                                         <div className="thumbnail object-cover">
                                             <Link to='/'>
@@ -57,7 +57,7 @@ export default function Products_featured() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="item" key={product.id} >
+                                <div className="item" >
                                     <div className="media">
                                         <div className="thumbnail object-cover">
                                             <Link to='/'>
@@ -87,7 +87,7 @@ export default function Products_featured() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="item" key={product.id}>
+                                <div className="item" >
                                     <div className="media">
                                         <div className="thumbnail object-cover">
                                             <Link to='/'>
@@ -116,7 +116,7 @@ export default function Products_featured() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="item" key={product.id} >
+                                <div className="item"  >
                                     <div className="media">
                                         <div className="thumbnail object-cover">
                                             <Link to='/'>
@@ -146,7 +146,7 @@ export default function Products_featured() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="item" key={product.id} >
+                                <div className="item" >
                                     <div className="media">
                                         <div className="thumbnail object-cover">
                                             <Link to='/'>
@@ -176,7 +176,7 @@ export default function Products_featured() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="item" key={product.id} >
+                                <div className="item" >
                                     <div className="media">
                                         <div className="thumbnail object-cover">
                                             <Link to='/'>
@@ -206,7 +206,7 @@ export default function Products_featured() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="item" key={product.id} >
+                                <div className="item">
                                     <div className="media">
                                         <div className="thumbnail object-cover">
                                             <Link to='/'>
@@ -235,7 +235,7 @@ export default function Products_featured() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="item" key={product.id} >
+                                <div className="item">
                                     <div className="media">
                                         <div className="thumbnail object-cover">
                                             <Link to='/'>

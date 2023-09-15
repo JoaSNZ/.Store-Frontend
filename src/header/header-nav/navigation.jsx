@@ -45,8 +45,8 @@ export default function Navigation(){
                     </div>
                     <div className="right">
                         <ul className="flexitem main-links">
-                            <li className= "btnLogin-popup"><Link to="/">Sign Up</Link></li>
-                            <li><Link to="/">My Account</Link></li>
+                            <li className= "btnLogin-popup"><Link to="/Login">Sign Up</Link></li>
+                            <li><Link to="/Login">My Account</Link></li>
                             <li><Link to="/">Order Tracking</Link></li>
                             <li><Link to="/">USD <span className="icon-small"><i className="ri-arrow-down-s-line"></i></span></Link>
                                 <ul>

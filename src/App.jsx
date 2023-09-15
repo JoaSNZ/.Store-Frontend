@@ -9,6 +9,7 @@ import Brands from './main/brands/brands';
 import Newsletter from './footer/newsletter/newsletter';
 import Socials from './footer/socials/socials';
 import Widgets from './footer/widgets/widgets';
+import Login_Register from './header/login/login';
 import Cart_page from './main/cart&checkout/cart-page';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -38,14 +39,10 @@ function App() {
             }
           />
           <Route
-            path= '/Cart'
+            path= '/Login'
             element={
               <>
-              <Nav_variant></Nav_variant>
-              <Cart_page></Cart_page>
-              <Newsletter></Newsletter>
-              <Widgets></Widgets>
-              <Socials></Socials>
+              <Login_Register></Login_Register>
               </>
             }
           />
