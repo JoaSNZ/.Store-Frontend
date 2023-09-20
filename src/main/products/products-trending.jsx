@@ -9,14 +9,9 @@ import home3 from '../../multimedia/products/home3.jpg';
 import electronic3 from '../../multimedia/products/electronic3.jpg';
 import shoe1 from '../../multimedia/products/shoe1.jpg';
 import { Link } from 'react-router-dom';
-import { data } from '../../data.js'
-import { useState } from 'react';
-export const Products_trending = ({ allProducts, setAllProducts }) => {
+export default function Products_trending() {
 
 
-    const onAddProduct = () => {
-        console.log("add")
-    }
 
     return (
         <div className="trending">
@@ -28,8 +23,7 @@ export const Products_trending = ({ allProducts, setAllProducts }) => {
                         <div className="column">
                             <div className="flexwrap">
                                 <div className="row products big">
-                                {data.map(product => (
-                                    <div className="item" key={product.id}>
+                                    <div className="item">
                                         <div className="offer">
                                             <p>Offer ends at</p>
                                             <ul className="flexcenter">
@@ -41,11 +35,13 @@ export const Products_trending = ({ allProducts, setAllProducts }) => {
                                         </div>
                                         <div className="media">
                                             <div className="image">
-                                                    <img src={apparel4} />
+                                                <Link to='/'>
+                                                    <img src={apparel4} alt="" />
+                                                </Link>
                                             </div>
                                             <div className="hoverable">
                                                 <ul>
-                                                    <li className="active"><button onClick={() => onAddProduct()}><i className="ri-heart-line"></i></button>
+                                                    <li className="active"><Link to='/'><i className="ri-heart-line"></i></Link>
                                                     </li>
                                                     <li><Link to='/'><i className="ri-eye-line"></i></Link></li>
                                                     <li><Link to='/'><i className="ri-shuffle-line"></i></Link></li>
@@ -58,9 +54,10 @@ export const Products_trending = ({ allProducts, setAllProducts }) => {
                                                 <div className="stars"></div>
                                                 <span className="mini-text">(2,548)</span>
                                             </div>
-                                            <h3 className="main-links"><Link to='/'>{product.nameProduct}</Link></h3>
+                                            <h3 className="main-links"><Link to='/'>Happy Sailed Womens Summer Boho
+                                        Floral</Link></h3>
                                             <div className="price">
-                                                <span className="current">{product.price}</span>
+                                                <span className="current">$129.99</span>
                                                 <span className="normal mini-text">$189.99</span>
                                             </div>
                                             <div className="stock mini-text">
@@ -74,7 +71,6 @@ export const Products_trending = ({ allProducts, setAllProducts }) => {
                                             </div>
                                         </div>
                                     </div>
-                                ))}
                                 </div>
                                 <div className="row products mini">
                                     <div className="item" >
@@ -347,8 +343,7 @@ export const Products_trending = ({ allProducts, setAllProducts }) => {
                         </div>
                     </div>
                 </div>
-            
+        
         </div>
-    
     )
-    }
+}

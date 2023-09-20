@@ -6,13 +6,9 @@ import home3 from '../../multimedia/products/home3.jpg';
 import home4 from '../../multimedia/products/home4.jpg';
 import home5 from '../../multimedia/products/home5.jpg';
 import {Link} from 'react-router-dom';
-import {data} from '../../data';
-import { useEffect, useState } from 'react';
-
+import {data} from '../../data'
 
 export default function Navigation(){
-
-    const [active, setActive ] = useState (false)
 
     //const dptButton = document.querySelector('.dpt-cat .dpt-trigger'),
         //dptClass = document.querySelector('.site');
@@ -193,8 +189,8 @@ export default function Navigation(){
                                         <div className="icon-large"><i className="ri-heart-line"></i></div>
                                         <div className="fly-item"><span className="item-number">0</span></div>
                                     </Link></li>
-                                <li className="cart"><Link to="/">
-                                <div className="icon-large" onClick={() => setActive(!active)}>
+                                <li className="cart"><Link to="/Cart">
+                                <div className="icon-large">
                                     <i className="ri-shopping-cart-line"></i>
                                     <div className="fly-item"><span className="item-number">5</span></div>
                                 </div>
@@ -204,7 +200,7 @@ export default function Navigation(){
                                 </div>
                                 </Link>
                                 <div className="mini-cart">
-                                    <div className={"container ${active ? '' : 'cart:hover'}"} >
+                                    <div className="content">
                                         <div className="cart-head">
                                             5 items in cart
                                         </div>

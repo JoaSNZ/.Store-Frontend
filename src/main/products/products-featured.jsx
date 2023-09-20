@@ -8,7 +8,7 @@ import shoe2 from '../../multimedia/products/shoe2.jpg';
 import shoe3 from '../../multimedia/products/shoe3.jpg';
 import shoe4 from '../../multimedia/products/shoe4.jpg';
 import { Link } from 'react-router-dom';
-import { data } from '../../data.js';
+
 
 
 export default function Products_featured() {

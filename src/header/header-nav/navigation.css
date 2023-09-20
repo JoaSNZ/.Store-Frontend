@@ -800,7 +800,7 @@ form.search button:hover{
 }
 
 .cart:hover .mini-cart{
-    visibility: hidden;
+    visibility: visible;
     opacity: 1;
 }
 
