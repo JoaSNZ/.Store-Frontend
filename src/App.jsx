@@ -11,7 +11,7 @@ import Widgets from './footer/widgets/widgets';
 import Login_Register from './header/login/login';
 import { useState } from 'react';
 import { Header_Cart } from './cart-test/header_cart';
-import { ProductList } from './cart-test/productlist';
+import  Product_List  from './cart-test/productlist';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -62,15 +62,8 @@ function App() {
                   countProducts={countProducts}
                   setCountProducts={setCountProducts}>
                 </Header_Cart>
-                <ProductList
-                  allProducts={allProducts}
-                  setAllProducts={setAllProducts}
-                  total={total}
-                  setTotal={setTotal}
-                  countProducts={countProducts}
-                  setCountProducts={setCountProducts}
-                >
-                </ProductList>
+                <Product_List>
+                </Product_List>
               </>
             }
           >

@@ -1,30 +1,36 @@
-import { data } from '../data';
 import './productlist.css';
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 
-export const ProductList = ({
-	allProducts,
-	setAllProducts,
-	countProducts,
-	setCountProducts,
-	total,
-	setTotal,
-}) => {
-	const onAddProduct = product => {
-		if (allProducts.find(item => item.id === product.id)) {
-			const products = allProducts.map(item =>
-				item.id === product.id
-					? { ...item, quantity: item.quantity + 1 }
-					: item
-			);
-			setTotal(total + product.price * product.quantity);
-			setCountProducts(countProducts + product.quantity);
-			return setAllProducts([...products]);
-		}
+export default function Product_List() {
+	const [cartItems, setCartItems] = useState([]);
+    const [data, setData] = useState([]);
 
-		setTotal(total + product.price * product.quantity);
-		setCountProducts(countProducts + product.quantity);
-		setAllProducts([...allProducts, product]);
-	};
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('http://localhost:8080/producto');
+                setData(response.data);
+            } catch (error) {
+                console.error('Error interno del servidor:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+	const addToCart = (product) => {
+        if (cartItems[product.id]) {
+            const updatedCart = { ...cartItems };
+            updatedCart[product.id].quantity += 1;
+            setCartItems(updatedCart);
+        } else {
+            setCartItems({
+            ...cartItems,
+            [product.id]: { ...product, quantity: 1 },
+            });
+        }
+    };
 
 	return (
 		<div className='container-itemsTest'>
@@ -36,7 +42,7 @@ export const ProductList = ({
 					<div className='info-productTest'>
 						<h2>{product.nameProduct}</h2>
 						<p className='priceTest'>${product.price}</p>
-						<button onClick={() => onAddProduct(product)}>
+						<button onClick={() => addToCart(product)}>
 							Añadir al carrito
 						</button>
 					</div>
