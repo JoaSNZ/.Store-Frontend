@@ -6,7 +6,7 @@ import home3 from '../../multimedia/products/home3.jpg';
 import home4 from '../../multimedia/products/home4.jpg';
 import home5 from '../../multimedia/products/home5.jpg';
 import {Link} from 'react-router-dom';
-import {data} from '../../data'
+
 
 export default function Navigation(){
 
@@ -45,8 +45,8 @@ export default function Navigation(){
                     </div>
                     <div className="right">
                         <ul className="flexitem main-links">
-                            <li className= "btnLogin-popup"><Link to="/Login">Sign Up</Link></li>
-                            <li><Link to="/Login">My Account</Link></li>
+                            <li className= "btnLogin-popup"><Link to="/register">Sign Up</Link></li>
+                            <li><Link to="/login">My Account</Link></li>
                             <li><Link to="/">Order Tracking</Link></li>
                             <li><Link to="/">USD <span className="icon-small"><i className="ri-arrow-down-s-line"></i></span></Link>
                                 <ul>

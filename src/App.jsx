@@ -8,7 +8,8 @@ import Brands from './main/brands/brands';
 import Newsletter from './footer/newsletter/newsletter';
 import Socials from './footer/socials/socials';
 import Widgets from './footer/widgets/widgets';
-import Login_Register from './header/login/login';
+import Login from './header/login/login';
+import Register from './header/login/register';
 import { useState } from 'react';
 import { Header_Cart } from './cart-test/header_cart';
 import  Product_List  from './cart-test/productlist';
@@ -43,10 +44,18 @@ function App() {
             }
           />
           <Route
-            path='/Login'
+            path='/login'
             element={
               <>
-                <Login_Register></Login_Register>
+                <Login></Login>
+              </>
+            }
+          />
+          <Route
+            path='/register'
+            element={
+              <>
+                <Register></Register>
               </>
             }
           />

@@ -268,76 +268,6 @@ form .socials_login button:hover{
 }
 
 
-.theform .play{
-    position: relative;
-    min-height: 300px;
-    transform: translateX(18%) rotateX(-180deg) scale(0.65) rotate(70deg);
-    z-index: 1;
-}
-
-.theform .play .wrapper_login{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.theform .play .card{
-    position: absolute;
-    width: 350px;
-    height: 500px;
-    border-radius: 30px;
-}
-
-.play .card.one{
-    background-color: #dddcfb;
-    transform: rotate(290deg) translate3d(20%,35%,0) skewY(-20deg);
-}
-.play .card.two{
-    background-color: var(--secondary-dark-color);
-    transform: rotate(318deg) translate3d(60%,8%,0) scale(1.1);
-}
-.play .card.three{
-    background-color: var(--secondary-color);
-    transform: rotate(335deg) translate3d(100%,-20%,0);
-}
-.play .card.four{
-    background-color: var(--light-text-color);
-    transform: rotate(-15deg) translate3d(45%,105%,0) scale(0.8);
-}
-.play .card.five{
-    background-color: var(--dark-color);
-    transform: rotate(283deg) translate3d(-150%,50%,0) ;
-}
-
-/* Animation */
-
-.signin, .signin-show .signup{
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
-}
-
-.signin-show .signin,
-.signup-show .signup{
-    visibility: visible;
-    opacity: 1;
-    height: auto;
-    transition: visibility .7s .3s, opacity .7s, .3s;
-}
-
-.signin-show .singin{
-    animation: singinswipe 1s .3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-@keyframes singinswipe{
-    form{transform: translate3d(-20%, 0, 0);}
-    to {transform: translate3d(0,0,0);}
-}
-
-.signup-show .singup{
-    animation: singupswipe 1s .3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
 @keyframes singupswipe{
     form{transform: translate3d(20%, 0, 0);}
     to {transform: translate3d(0,0,0);}
@@ -370,19 +300,6 @@ form .socials_login button:hover{
     }
     .signin-show .play{
         animation: signinplay 1s both;
-    }
-    @keyframes signinplay {
-        0% {transform: translateX(100%) skewX(20deg);}
-        0% {transform: translateX(25%) scale(10) skewX(40deg) rotateY(180deg);}
-        0% {transform: translateX(0) rotateY(180deg);}
-    }
-    .signup-show .play{
-        animation: signupplay 1s both;
-    }
-    @keyframes signupplay {
-        0% {transform: translateX(-50%) skewX(80deg);}
-        0% {transform: translateX(0) scale(10) skewX(80deg);}
-        0% {transform: translateX(100%);}
     }
 }
 
