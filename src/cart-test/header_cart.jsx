@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './header_cart.css';
 import {Link} from 'react-router-dom';
-
+import axios from 'axios';
 export const Header_Cart = ({
 	allProducts,
 	setAllProducts,
@@ -10,6 +10,7 @@ export const Header_Cart = ({
 	setCountProducts,
 	setTotal,
 }) => {
+	const [cartItems] = useState([]);
 	const [active, setActive] = useState(false);
 
 	const onDeleteProduct = product => {
@@ -27,6 +28,25 @@ export const Header_Cart = ({
 		setTotal(0);
 		setCountProducts(0);
 	};
+
+	const filteredCart = Object.values(cartItems).map(({ id, cart }) => ({ id, cart }));
+
+	const jsonifiedCart = JSON.stringify(filteredCart);
+
+	const handleCart = async () => {
+        if (jsonifiedCart !== "[]") {
+            try {
+                await axios.post('http://localhost:8080/carrito', {jsonifiedCart});
+    
+                alert('Articulos comprados con exito');
+            } catch (err) {
+                alert('Error al realizar la compra');
+                console.log("Error al registrar carrito: ", err)
+            }    
+        } else {
+            alert('Seleccionar articulos antes de realizar la compra');
+        }
+    };
 
 	return (
 		<header className='headerTest'>
@@ -67,14 +87,17 @@ export const Header_Cart = ({
 								{allProducts.map(product => (
 									<div className='cart-productTest' key={product.id}>
 										<div className='info-cart-productTest'>
-											<span className='cantidad-producto-carrito'>
-												{product.quantity}
+											<span className='imagen-producto-carrito'>
+												{product.img}
 											</span>
 											<p className='titulo-producto-carrito'>
-												{product.nameProduct}
+												{product.name}
 											</p>
 											<span className='precio-producto-carrito'>
 												${product.price}
+											</span>
+											<span className='cantidad-producto-carrito'>
+												${product.quantity}
 											</span>
 										</div>
 										<svg
@@ -100,6 +123,10 @@ export const Header_Cart = ({
 								<h3>Total:</h3>
 								<span className='total-pagar'>${total}</span>
 							</div>
+
+							<button className='btn-clear-all' onClick={handleCart}>
+								Comprar
+							</button>
 
 							<button className='btn-clear-all' onClick={onCleanCart}>
 								Vaciar Carrito
