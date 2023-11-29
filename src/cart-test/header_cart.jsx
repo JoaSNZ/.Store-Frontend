@@ -29,14 +29,14 @@ export const Header_Cart = ({
 		setCountProducts(0);
 	};
 
-	const filteredCart = Object.values(cartItems).map(({ id, cart }) => ({ id, cart }));
+	const carritoFiltrado = Object.values(cartItems).map(({ id, cart }) => ({ id, cart }));
 
-	const jsonifiedCart = JSON.stringify(filteredCart);
+	const carritoRegistrado = JSON.stringify(carritoFiltrado);
 
 	const handleCart = async () => {
-        if (jsonifiedCart !== "[]") {
+        if (carritoRegistrado !== "[]") {
             try {
-                await axios.post('http://localhost:8080/carrito', {jsonifiedCart});
+                await axios.post('http://localhost:8080/carrito', {carritoRegistrado});
     
                 alert('Articulos comprados con exito');
             } catch (err) {
