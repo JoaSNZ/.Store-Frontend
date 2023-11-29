@@ -9,7 +9,7 @@ export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleLogin = async (e) => {
+    const loginUser = async (e) => {
         e.preventDefault();
 
         try {
@@ -52,7 +52,7 @@ export default function Login() {
                             </p>
                             <div className="actions">
                                 <label>
-                                    <input type="submit" onClick={handleLogin} value="Sign In" />
+                                    <input type="submit" onClick={loginUser} value="Sign In" />
                                     <i className='ri-arrow-right-line' />
                                 </label>
                                 <p>Or</p>

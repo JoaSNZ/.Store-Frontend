@@ -6,29 +6,29 @@ import React, { useState } from 'react';
 
 export default function Register() {
     
-    const [formData, setForm] = useState({
+    const [userData, setData] = useState({
         username: "",
         email: "",
         password: "",
         password2: ""
       });
     
-      const handleChange = (e) => {
-        setForm({
-          ...formData,
+      const statusChange = (e) => {
+        setData({
+          ...userData,
           [e.target.name]: e.target.value
         });
       };
     
-      const handleRegister = async (e) => {
+      const userRegister = async (e) => {
         e.preventDefault();
     
-        if (formData.password !== formData.password2) {
+        if (userData.password !== userData.password2) {
           alert("Las contrasenas deben coincidir");
         } else {
           try {
             await axios.post('http://localhost:8080/registro', {
-              formData
+              userData
             });
       
             alert("Registrado");
@@ -66,24 +66,24 @@ export default function Register() {
                         <form action="">
                             <p>
                                 <i className='ri-user-3-line' />
-                                <input type="text" name="username" onChange={handleChange} id="username" placeholder='Full Name' />
+                                <input type="text" name="username" onChange={statusChange} id="username" placeholder='Full Name' />
                             </p>
                             <p>
                                 <i className='ri-mail-line' />
-                                <input type="email" name="email" onChange={handleChange} id="email" placeholder='Your email address' />
+                                <input type="email" name="email" onChange={statusChange} id="email" placeholder='Your email address' />
                             </p>
                             <p>
                                 <i className='ri-lock-line' />
                                 <i className='ri-eye-off-line' />
-                                <input type="password" name="password" onChange={handleChange} id="password" placeholder='Enter password' />
+                                <input type="password" name="password" onChange={statusChange} id="password" placeholder='Enter password' />
                             </p>
                             <p>
                                 <i className='ri-lock-line' />
-                                <input type="password" name="password2" onChange={handleChange} id="password2" placeholder='Re-Enter password' />
+                                <input type="password" name="password2" onChange={statusChange} id="password2" placeholder='Re-Enter password' />
                             </p>
                             <div className="actions">
                                 <label>
-                                    <input type="submit" onClick={handleRegister} value="Sign Up" />
+                                    <input type="submit" onClick={userRegister} value="Sign Up" />
                                     <i className='ri-arrow-right-line' />
                                 </label>
                                 <p>Or</p>
