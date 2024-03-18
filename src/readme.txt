@@ -30,8 +30,19 @@ con los usuarios de una manera similar a la comunicación humana.
 
 4. ¿A qué equivale una palabra del promt?
 
-Una "palabra en el prompt" se refiere a una palabra específica que se proporciona como parte de una consulta.
-Esta palabra es esencial para determinar el contexto y la dirección de la conversación. 
-Cada palabra en el prompt es fundamental para que el modelo comprenda tu solicitud y genere una respuesta.
-Por lo tanto, una palabra en el prompt se refiere a una unidad básica de información dentro de la entrada que
-el usuario proporciona, que influye en cómo se desarrolla la interacción.
+Una palabra en ChatGPT equivale a un token que es analizado por el proceso llamado "embedding". 
+Este proceso convierte palabras en vectores numéricos, situándolos en un espacio virtual 
+donde las relaciones entre palabras se representan según su contexto en textos procesados. 
+A través de operaciones matemáticas en este espacio, la IA puede generar respuestas.
+Sin embargo, la IA no comprende el significado de las palabras en el sentido humano.
+En cambio, procesa probabilísticamente las palabras para generar respuestas basadas en reglas de probabilidad
+y contexto. La IA sigue un camino a través de la red de conceptos representados por los vectores numéricos
+generados a partir de los tokens ingresados con el fin de desarrollar una respuesta coherente.
+Un ejemplo de cómo la inteligencia artificial procesa palabras sería el siguiente:
+Se considera el caso de las palabras "rey" y "reina". 
+Después de procesar textos que contienen estas palabras, la IA asigna vectores numéricos a cada una 
+y las posiciona en un espacio virtual donde palabras relacionadas están cercanas entre sí. 
+Luego, se pueden realizar operaciones matemáticas en estos vectores para obtener resultados que 
+reflejen relaciones semánticas. Por ejemplo, la operación "Rey - Hombre + Mujer" 
+resulta en el vector que representa "Reina", mostrando cómo la IA puede generar respuestas complejas 
+basadas en patrones matemáticos en lugar de una comprensión real del significado de las palabras.
