@@ -8,17 +8,10 @@ import home5 from '../../multimedia/products/home5.jpg';
 import { Link } from 'react-router-dom';
 import { Autocomplete } from '@mui/material';
 import TextField from '@mui/material/TextField';
+import { prediction } from '../../services/prediction';
 
 
 export default function Navigation() {
-
-    //const dptButton = document.querySelector('.dpt-cat .dpt-trigger'),
-    //dptClass = document.querySelector('.site');
-    //dptButton.addEventListener('click', function() {
-    //dptClass.classList.toggle('showdpt')
-    //})
-
-
 
     return (
         <div id="page" className="site page-home">
