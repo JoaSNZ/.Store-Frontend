@@ -1,5 +1,3 @@
-import * as tf from '@tensorflow/tfjs';
-
 const ALPHA_LEN = 26;
 const sample_len = 1;
 const max_len = 10;

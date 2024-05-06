@@ -8,11 +8,14 @@ import home5 from '../../multimedia/products/home5.jpg';
 import { Link } from 'react-router-dom';
 import { Autocomplete } from '@mui/material';
 import TextField from '@mui/material/TextField';
-import { prediction } from '../../services/prediction';
-
+import { setup } from '../../services/prediction.js';
+import { useEffect } from 'react';
 
 export default function Navigation() {
 
+    useEffect(() => {
+        setup();
+    }, []);
     return (
         <div id="page" className="site page-home">
 
